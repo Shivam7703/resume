@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@800&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+
+.section1 { padding: 0 0 2vw;
+    width: 100%;
+    height: auto;
+}
+
+.flex-row-arround {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.flex-row-center{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+.sec1p1 {
+    width: 40%;
+    height: auto;
+}
+
+.sec1p1 .mob {
+    width: 100%;
+    position: relative;
+    margin: 60px 0;
+}
+
+.sec1p1 .pers {  width: 30%;
+    position: absolute;
+    top:25%;
+    left: 7.5%;
+    animation: move 3s ease-in-out infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(2%);
+    }
+    50% {
+        transform: translateY(-7%);
+    }
+    100% {
+        transform: translateY(2%);
+    }
+
+}
+
+.sec1p2 {
+    width: 50%;
+    text-align: center;
+    height: auto;
+    h2{
+        font-size: 40px;
+    }
+    .p{
+        font-size: 40px;font-family: 'Rubik Scribble', system-ui;
+        font-weight: 900;
+    }
+    .p2{
+        font-size: 1.6rem;
+        font-weight: 700;
+        font-family: sans-serif;
+    }
+}
+
+.sec1p2 .hmain {
+    font-size: 100px;
+    font-family: 'Geologica', sans-serif;
+    /* font-family: 'Rubik Scribble', system-ui; */
+    position: relative;
+    background: url('img/spiral.jpg') repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 900;
+    
+}
+
+.sec1p2 .hmain .hshadow {
+    position: absolute;
+    font-size: 100px;
+    color: #000;
+    z-index: -1;
+    font-family: 'Geologica', sans-serif;
+    top: 4px;
+    left: 15px;
+}
+
+p{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* section2*/
+.section2{
+    background-color: #1d1d1d;
+    padding: 6vw 0;
+    .sec2p1{
+        width: 30%;
+
+        img{
+            width: 100%;
+        }
+    }
+    .sec2p2{
+        width: 40%;
+    }
+    h2{
+        color: white;
+        font-size: 1.9rem;
+    }
+    p{
+        color: white;
+    }
+}
+a {
+    all: initial;
+}
+
+.but{
+    padding: 10px 25px;
+    border-radius: 13px;
+    color: white;
+    background-color: red;
+    margin: 20px 0;
+    font-size: 19px;
+    transition: ease-in-out 0.6s;
+}
+.but:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+/* section3 */
+.section3{
+    padding: 2vw 5vw;
+    width: calc(100%-10vw); text-align: center;
+
+    h4{
+        font-size: 2rem;
+    }
+    .skill-card{
+box-shadow: 0 0 20px 2px rgb(190, 189, 189);        width: 250px; margin: 20px;
+        height: auto;
+        padding: 20px;
+display: flex; flex-direction: column; align-items: center; text-align: center;
+border-radius: 10px;
+        img{
+            width: 60px;
+            height: auto;
+        }
+        h5{
+            margin: 10px;
+            font-size: 29px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .persent{
+            width: 100%;
+            height: 30px;
+            border: 2px solid black;
+            border-radius: 20PX;overflow: hidden;
+        }
+    }
+}
+
+
+.owl-carousel .owl-nav button.owl-next{
+    position: absolute;
+    top: 40%;
+    right:-2vw;
+    transform: scale(5);
+}
+.owl-carousel .owl-nav button.owl-prev{
+    position: absolute;
+    top: 40%;
+    left:  -2vw;
+    transform: scale(5);
+}
+
+.section4{
+    padding: 3vw 0;
+    .sec4p1{
+        width: 30%;
+        padding: 20px;
+        h6{
+            margin-top: 16px;
+            font-size: 22px;
+        }
+        p{
+            margin-top: 7px;
+            font-size: 19px;
+        }
+    }
+    .sec4p2{
+        width: 36%;
+        padding: 30px;
+     
+        .name{
+            width: 100%;
+            margin-top: 10px;
+            input, textarea{
+                width: calc(100% - 20px);
+                padding: 10px;
+                font-size: 17px;
+                border: none;
+                background-color: rgb(231, 231, 231);
+            }
+
+        }
+    }
+}
+footer{
+    background-color: black;
+    width: 100%;
+    padding: 4vw 0;
+}
+
+@media screen and (max-width: 900px) {
+   
+    .sec1p1, .sec1p2{
+        width: 100vw;
+    }
+    .sec1p1 .pers {  width: 90%;
+        position: absolute;
+        top:12%;
+        animation: move 3s ease-in-out infinite;
+    }
+.sec1p2 .hmain{
+    font-size: 40px;
+}.sec1p2 .hmain .hshadow{
+    display: none;
+}.sec1p2{
+.p {
+    font-size: 23px;
+}
+.p2{
+    font-size: 18px;
+    margin-bottom: 70px;
+}}
+
+.section2{ .sec2p1{
+    margin: 20px 0;
+    width: 100vw;}
+    .sec2p2{
+        width: 90vw;
+        padding: 5vw;
+        text-align: center;
+    }
+}
+
+.section4{
+    .sec4p1{
+width: 90vw;
+margin: 5vw;
+    }
+    .sec4p2{
+        width: 90vw;
+margin: 5vw;
+    }
+}
+
+  }
+  @media screen and (max-width: 630px) {
+    .section3
+        .skill-card{
+            width: calc(90vw - 80px)!important;
+        }
+    
+  }
